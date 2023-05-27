@@ -1,13 +1,241 @@
 body {
   margin: 0;
+  background-image: url("images/background02.png");
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: fadeIn 0.5s ease-in forwards;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.portfolio-page {
+  padding: 15px;
+}
+
+.name-heading {
+  margin-left: 25px;
+}
+
+.info-container {
+  display: flex;
+  direction: ltr;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  flex-flow: row;
+}
+
+.profile-picture {
+  border-radius: 5%;
+  height: 380px;
+  width: 380px;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.about-me-container {
+  width: 1200px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  line-break: strict;
+  letter-spacing: 1px;
+  background-color: rgba(240, 240, 240, 0.8); /* Adjust the alpha value to control the opacity */
+  padding: 15px;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in forwards;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 30px;
+  align-content: baseline;
+}
+.about-me-heading {
+  display: flex;
+  flex-flow: row;
+  width: 1000px;
+  height: 5px;
+}
+
+.about-me-item {
+  grid-column: span 1;
+}
+.about-me-item-2 {
+  grid-column: span 1;
+  margin-top: 40px;
+}
+/*.about-me-row1 {*/
+/*  display: flex;*/
+/*  flex-flow: row;*/
+/*}*/
+/*.paragraph {*/
+/*  width: 4050px;*/
+/*  margin-right: 85px;*/
+/*}*/
+/*.about-me-row2 {*/
+/*  display: flex;*/
+/*  flex-flow: row;*/
+/*}*/
+
+.about-me-container p {
+  opacity: 1; /* Ensure the text is fully opaque */
+}
+
+.navigation {
+  padding: 5px;
+  background-color: bisque;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  direction: rtl;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.navigation__item {
+  margin-right: 10px;
+  padding-right: 25px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+.navigation__link:hover {
+  background-color: #ddd;
+}
+
+.projects-link {
+  letter-spacing: 0.5px;
+}
+
+.contact-main-content {
+  padding: 25px;
+  margin-left: 15px;
+}
+
+.space-explorer-video {
+  /*width: 336px;*/
+  padding: 15px;
+  margin-right: 25px;
+  height: 650px;
+  border-radius: 33px;
+}
+
+.space-explorer-project {
+  display: flex;
+  flex-flow: column;
+  direction: ltr;
+  padding: 25px;
+  /*overflow-x: scroll;*/
+  white-space: nowrap;
+}
+.images {
+  display: flex;
+  flex-flow: row;
+  direction: ltr;
+  /*padding: 25px;*/
+  overflow-x: scroll;
+  white-space: nowrap;
+  /* Customizations */
+  /*height: 300px;*/
+  /*border: 1px solid #ccc;*/
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the scrollbar (WebKit browsers) */
+.images::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+.images::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.images::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Style the scrollbar (Firefox) */
+.images {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f5f5f5;
+}
+
+.videos {
+  display: flex;
+  flex-flow: row;
+  direction: ltr;
+  padding: 25px;
+  /*overflow-x: scroll;*/
+  white-space: nowrap;
+}
+
+.project-image01 {
+  /*margin-top: 65px;*/
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.space-explorer-project img {
+  flex-shrink: 0;
+  margin-right: 25px;
+}
+
+.space-explorer-project img:last-child {
+  margin-right: 0;
+}
+
+.space-explorer-details-video-container {
+
+
+}
+
+.space-explorer-project-details {
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(240, 240, 240, 0.8);
+  border-radius: 10px;
+  direction: ltr;
+  width: 500px;
+  height: fit-content;
+  padding: 15px;
+  margin-left: 25px;
+  margin-right: 45px;
+}
+
+.space-explorer-project-details {
+  opacity: 1;
+}
+
+.skills-container {
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(240, 240, 240, 0.8);
+  border-radius: 10px;
+  margin-top: 35px;
+  direction: ltr;
+  width: 500px;
+  height: fit-content;
+  padding: 15px;
+  margin-left: 25px;
+  margin-right: 45px;
 }
