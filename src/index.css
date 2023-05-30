@@ -42,9 +42,18 @@ code {
   margin-left: 25px;
   margin-bottom: 25px;
   line-break: strict;
+  display: flex;
+  flex-flow: column;
   letter-spacing: 1px;
   background-color: rgba(240, 240, 240, 0.8); /* Adjust the alpha value to control the opacity */
   padding: 15px;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in forwards;
+}
+.about-me-grid {
+  margin-bottom: 25px;
+  line-break: strict;
+  letter-spacing: 1px;
   border-radius: 10px;
   animation: fadeIn 2s ease-in forwards;
   display: inline-grid;
@@ -66,18 +75,6 @@ code {
   grid-column: span 1;
   margin-top: 40px;
 }
-/*.about-me-row1 {*/
-/*  display: flex;*/
-/*  flex-flow: row;*/
-/*}*/
-/*.paragraph {*/
-/*  width: 4050px;*/
-/*  margin-right: 85px;*/
-/*}*/
-/*.about-me-row2 {*/
-/*  display: flex;*/
-/*  flex-flow: row;*/
-/*}*/
 
 .about-me-container p {
   opacity: 1; /* Ensure the text is fully opaque */
@@ -128,7 +125,7 @@ code {
   border-radius: 33px;
 }
 
-.space-explorer-project {
+.projects {
   display: flex;
   flex-flow: column;
   direction: ltr;
@@ -195,34 +192,34 @@ code {
   }
 }
 
-.space-explorer-project img {
+.projects img {
   flex-shrink: 0;
   margin-right: 25px;
 }
 
-.space-explorer-project img:last-child {
+.projects img:last-child {
   margin-right: 0;
 }
 
-.space-explorer-details-video-container {
+.project-details-container {
 
 
 }
 
-.space-explorer-project-details {
+.project-details {
   display: flex;
   flex-flow: column;
   background-color: rgba(240, 240, 240, 0.8);
   border-radius: 10px;
   direction: ltr;
-  width: 500px;
+  width: 560px;
   height: fit-content;
   padding: 15px;
   margin-left: 25px;
   margin-right: 45px;
 }
 
-.space-explorer-project-details {
+.project-details {
   opacity: 1;
 }
 
