@@ -7,12 +7,9 @@ import Contact from './Contact';
 const App: React.FC = () => {
     return (
         <Router>
-            <div>
-                <Navigation/>
-            </div>
+            <div><Navigation/></div>
             <Routes>
                 <Route path="/about" element={<About />} />
-                {/*<Route path="/projects" Component={Projects} />*/}
                 <Route path="/contact" Component={Contact} />
             </Routes>
         </Router>

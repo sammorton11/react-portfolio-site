@@ -1,17 +1,23 @@
 import React from 'react';
-
-
-
-interface ProjectsProps {
-	// Define the required props for the Projects component, if any
-}
-
-const Projects: React.FC<ProjectsProps> = () => {
+import {Skills} from "./Skills";
+import {SpaceExplorerImages} from "./SpaceExplorerImages";
+import {SpaceExplorerVideos} from "./SpaceExplorerVideos";
+import {JetpackNotesImages} from "./JetpackNotesImages";
+import {SpaceExplorerDetails} from "./SpaceExplorerDetails";
+import {JetpackNotesDetails} from "./JetpackNotesDetails";
+const Projects= () => {
 	// Add your component code here
 	return (
-		<>
-			<div>Projects Component</div>
-		</>
+		<div className="project-details-container">
+			<div className="projects">
+				<Skills/>
+				<SpaceExplorerDetails/>
+			    <SpaceExplorerImages/>
+				<SpaceExplorerVideos/>
+				<JetpackNotesDetails/>
+				<JetpackNotesImages/>
+			</div>
+		</div>
 	);
 };
 
